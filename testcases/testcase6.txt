@@ -1,0 +1,69 @@
+[NODES]
+1,1.558708,110.340547,Masjid Bandaraya Kuching
+2,1.557014,110.343616,Padang Merdeka
+3,1.558558,110.344180,Plaza Merdeka
+4,1.557108,110.345049,St. Thomas' Cathedral
+6,1.558856,110.344629,Old Courthouse Auditorium
+8,1.554494,110.343009,Haji Openg Junction
+9,1.551219,110.343969,Sarawak Museum Admin Building
+10,1.551910,110.343500,Sarawak Museum (Old Building)
+
+[WAYS]
+# way_id,from_node,to_node,road_name,highway_type,travel_time_min
+
+# Simplified Network - BETTER CONNECTIVITY
+# Masjid ↔ Padang (bidirectional)
+3001,1,2,Jalan Datuk Ajibah Abol,primary,5
+3002,2,1,Jalan Datuk Ajibah Abol,primary,4
+
+# Padang ↔ Plaza (bidirectional)
+3003,2,3,Jalan Tun Abang Haji Openg,secondary,3
+3004,3,2,Jalan Tun Abang Haji Openg,secondary,2
+
+# Padang ↔ Cathedral (bidirectional)
+3005,2,4,Jalan McDougall,tertiary,4
+3006,4,2,Jalan McDougall,tertiary,3
+
+# Padang ↔ Courthouse (bidirectional)
+3007,2,6,Jalan Pearl,secondary,3
+3008,6,2,Jalan Pearl,secondary,2
+
+# Plaza ↔ Courthouse (NOW BIDIRECTIONAL)
+3009,3,6,Jalan Wawasan,secondary,2
+3010,6,3,Jalan Wawasan,secondary,3
+
+# Cathedral ↔ Courthouse (NEW CONNECTION)
+3011,4,6,Jalan Inner Link,tertiary,5
+3012,6,4,Jalan Inner Link,tertiary,4
+
+# Padang ↔ Haji Openg Junction (bidirectional)
+3013,2,8,Jalan Tun Abang Haji Openg,secondary,5
+3014,8,2,Jalan Tun Abang Haji Openg,secondary,4
+
+# Haji Openg ↔ Museum Admin (bidirectional)
+3015,8,9,Jalan Tun Abang Haji Openg,secondary,4
+3016,9,8,Jalan Tun Abang Haji Openg,secondary,3
+
+# Museum Admin ↔ Old Museum (bidirectional)
+3017,9,10,Jalan Taman Budaya,secondary,5
+3018,10,9,Jalan Taman Budaya,secondary,3
+
+# NEW: Plaza ↔ Haji Openg (Creates alternative path)
+3019,3,8,Jalan Alternative Route,secondary,6
+3020,8,3,Jalan Alternative Route,secondary,5
+
+# NEW: Masjid ↔ Haji Openg (Direct connection)
+3021,1,8,Jalan Masjid Bypass,primary,8
+3022,8,1,Jalan Masjid Bypass,primary,7
+
+[CAMERAS]
+# monitored roads (accident ⇒ time × ACCIDENT_MULTIPLIER)
+3001,images/cam_ajibah_abol.jpg
+3007,images/cam_pearl_road.jpg
+3017,images/cam_taman_budaya.jpg
+3021,images/cam_masjid_bypass.jpg
+
+[META]
+START,1
+GOAL,10
+ACCIDENT_MULTIPLIER,3

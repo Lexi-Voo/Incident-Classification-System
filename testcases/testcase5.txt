@@ -1,0 +1,35 @@
+[NODES]
+1,1.5572,110.3510,UiTM Samarahan Gate
+2,1.5566,110.3500,Samarahan Medical Centre
+3,1.5559,110.3490,Aiman Mall
+4,1.5553,110.3480,Samarahan Civic Centre
+5,1.5547,110.3470,Engineering Faculty
+6,1.5540,110.3482,Kolej Laila Taib
+7,1.5550,110.3460,Samarahan Stadium
+8,1.5560,110.3472,Samarahan Bus Hub
+9,1.5570,110.3484,Riverside Park
+
+[WAYS]
+5001,1,2,Jalan UiTM,primary,4
+5002,2,1,Jalan UiTM,primary,4
+
+5003,2,3,Jalan Samarindah,secondary,3
+5004,3,2,Jalan Samarindah,secondary,4
+
+5005,3,4,Jalan Civic,secondary,4
+5006,4,3,Jalan Civic,secondary,3
+
+5007,1,5,Campus Road,service,3
+# no reverse
+
+5008,5,6,Engineering Link,secondary,3
+5009,6,5,Engineering Link,secondary,3
+
+5010,3,7,Stadium Link,secondary,4
+5011,7,8,Bus Hub Road,secondary,3
+5012,8,9,Riverfront Drive,secondary,3
+
+[METА]
+START,6
+GOAL,3,4,9
+ACCIDENT_MULTIPLIER,2

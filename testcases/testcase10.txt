@@ -1,0 +1,44 @@
+[NODES]
+# Test Case 10: Industrial Area (8 nodes)
+# Coordinates: INSIDE OSM bounds (1.5517-1.5614, 110.3363-110.3523)
+1,1.559604,110.340028,Factory Hub
+2,1.555872,110.340679,Warehouse District
+3,1.556233,110.337307,Workshop Center
+4,1.55867,110.339563,Storage Facility
+5,1.554188,110.339981,Distribution Point
+6,1.555061,110.345491,Loading Bay
+7,1.556152,110.347513,Truck Terminal
+8,1.557383,110.350555,Logistics Center
+
+[WAYS]
+# way_id,from_node,to_node,road_name,highway_type,travel_time_min
+
+10001,1,2,Factory Hub Street,primary,5
+10002,1,8,Factory Hub Way,primary,3
+10003,2,3,Warehouse District Boulevard,primary,6
+10004,3,2,Workshop Center Street,primary,4
+10005,3,4,Workshop Center Road,primary,3
+10006,3,5,Workshop Center Way,secondary,4
+10007,4,5,Storage Facility Boulevard,primary,3
+10008,4,6,Storage Facility Highway,secondary,5
+10009,5,3,Distribution Point Lane,secondary,5
+10010,5,4,Distribution Point Drive,primary,4
+10011,5,6,Distribution Point Drive,primary,3
+10012,6,7,Loading Bay Road,primary,4
+10013,6,8,Loading Bay Way,secondary,4
+10014,7,6,Truck Terminal Lane,primary,5
+10015,7,8,Truck Terminal Boulevard,primary,3
+10016,8,1,Logistics Center Highway,primary,3
+10017,8,6,Logistics Center Avenue,secondary,6
+10018,8,7,Logistics Center Drive,primary,5
+
+[CAMERAS]
+# monitored roads
+10010,images/cam_tc10_10010.jpg
+10015,images/cam_tc10_10015.jpg
+10013,images/cam_tc10_10013.jpg
+
+[META]
+START,8
+GOAL,3,4
+ACCIDENT_MULTIPLIER,3

@@ -1,0 +1,49 @@
+[NODES]
+# SAMPLE: City Center Traffic Network (5 nodes only - simple test)
+1,1.560000,110.341000,City Hall
+2,1.559000,110.342500,Shopping Mall
+3,1.558000,110.344000,Train Station
+4,1.557000,110.342000,Hospital
+5,1.556500,110.343500,University
+
+[WAYS]
+# way_id,from_node,to_node,road_name,highway_type,travel_time_min
+
+# Full mesh network - LOTS of alternative routes!
+# City Hall connections
+4001,1,2,Main Street North,primary,3
+4002,2,1,Main Street North,primary,2
+4003,1,3,East Avenue,secondary,6
+4004,3,1,East Avenue,secondary,5
+4005,1,4,West Boulevard,secondary,5
+4006,4,1,West Boulevard,secondary,4
+
+# Shopping Mall connections
+4007,2,3,Commerce Road,primary,4
+4008,3,2,Commerce Road,primary,3
+4009,2,4,Market Street,secondary,4
+4010,4,2,Market Street,secondary,3
+4011,2,5,University Drive,secondary,7
+4012,5,2,University Drive,secondary,6
+
+# Train Station connections
+4013,3,4,Transit Way,tertiary,8
+4014,4,3,Transit Way,tertiary,7
+4015,3,5,Campus Link,secondary,5
+4016,5,3,Campus Link,secondary,4
+
+# Hospital connections
+4017,4,5,Medical Avenue,primary,4
+4018,5,4,Medical Avenue,primary,3
+
+[CAMERAS]
+# monitored roads
+4001,images/cam_main_north.jpg
+4007,images/cam_commerce.jpg
+4015,images/cam_campus.jpg
+4017,images/cam_medical.jpg
+
+[META]
+START,1
+GOAL,5
+ACCIDENT_MULTIPLIER,3

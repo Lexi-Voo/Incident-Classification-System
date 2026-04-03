@@ -1,0 +1,49 @@
+[NODES]
+1,1.559200,110.341900,DBKU Tower
+2,1.560100,110.343500,Sarawak Tourism Complex
+3,1.561000,110.344900,Open Air Market
+4,1.559800,110.346300,Electra House Commercial Centre
+5,1.558300,110.346800,Chinese Museum
+6,1.557700,110.344200,India Street Arch
+7,1.556900,110.345900,Hiang Thian Siang Ti Temple
+8,1.557300,110.343000,Carpenter Street Entrance
+9,1.556800,110.342000,Chinatown Gate
+10,1.558900,110.342700,Waterfront Clock Tower
+
+[WAYS]
+3001,1,2,Jalan Bukit Mata Kuching,primary,5
+3002,2,1,Jalan Bukit Mata Kuching,primary,3
+
+3003,2,3,Jalan Power,secondary,4
+3004,3,2,Jalan Power,secondary,2
+
+3005,3,4,Jalan India,secondary,3
+3006,4,3,Jalan India,secondary,4
+
+3007,4,5,Jalan Tunku Abdul Rahman,primary,5
+3008,5,4,Jalan Tunku Abdul Rahman,primary,4
+
+3009,5,6,Jalan Gambier,secondary,3
+3010,6,5,Jalan Gambier,secondary,2
+
+3011,6,7,Jalan India Backlane,service,2
+# no reverse
+
+3012,7,8,Temple Lane,secondary,5
+3013,8,7,Temple Lane,secondary,4
+
+3014,8,9,Carpenter Street,secondary,3
+3015,9,8,Carpenter Street,secondary,3
+
+3016,9,10,Waterfront Link,secondary,4
+3017,10,9,Waterfront Link,secondary,3
+
+[CAMERAS]
+3007,images/cam_tunku_abdul_rahman.jpg
+3014,images/cam_carpenter_street.jpg
+3001,images/cam_bukit_mata.jpg
+
+[META]
+START,1
+GOAL,5,10
+ACCIDENT_MULTIPLIER,3

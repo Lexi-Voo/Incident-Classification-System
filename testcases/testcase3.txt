@@ -1,0 +1,62 @@
+[NODES]
+# Test Case 3: Commercial Hub (7 nodes)
+# Coordinates: INSIDE OSM bounds (1.5517-1.5614, 110.3363-110.3523)
+1,1.5535,110.3380,Tabuan Jaya Mall
+2,1.5543,110.3392,Emart Stutong
+3,1.5550,110.3404,Stutong Food Court
+4,1.5558,110.3416,Stutong Market
+5,1.5566,110.3428,Stutong Community Centre
+6,1.5548,110.3410,Tabuan Mosque
+7,1.5539,110.3400,Tabuan Jaya Apartments
+
+[WAYS]
+# way_id,from_node,to_node,road_name,highway_type,travel_time_min
+
+# Tabuan Mall connections
+3001,1,2,Jalan Setia Raja,primary,4
+3002,2,1,Jalan Setia Raja,primary,3
+
+# Emart connections
+3003,2,3,Jalan Keruing,secondary,3
+3004,3,2,Jalan Keruing,secondary,3
+
+# Food Court connections
+3005,3,4,Jalan Stutong Market,service,2
+# no reverse
+
+# Market connections
+3006,4,5,Market Loop,secondary,4
+3007,5,4,Market Loop,secondary,3
+
+# Mall to Mosque
+3008,1,6,Mosque Road,secondary,3
+3009,6,1,Mosque Road,secondary,3
+
+# Mosque to Apartments
+3010,6,7,Apartment Link,secondary,4
+3011,7,6,Apartment Link,secondary,3
+
+# Apartments to Mall (completing loop)
+3012,7,1,Park Backlane,secondary,3
+3013,1,7,Park Backlane,secondary,4
+
+# Cross connections
+3014,2,6,Shortcut Road,secondary,5
+3015,6,2,Shortcut Road,secondary,4
+
+3016,3,6,Market Access,service,3
+# no reverse
+
+3017,4,7,Community Link,secondary,5
+3018,7,4,Community Link,secondary,4
+
+[CAMERAS]
+# monitored roads
+3001,images/cam_setia_raja.jpg
+3006,images/cam_market_loop.jpg
+3010,images/cam_apartment_link.jpg
+
+[META]
+START,7
+GOAL,5
+ACCIDENT_MULTIPLIER,3

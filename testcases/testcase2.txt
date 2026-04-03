@@ -1,0 +1,39 @@
+[NODES]
+# Test Case 3: Commercial Hub (7 nodes)
+# Coordinates: INSIDE OSM bounds (1.5517-1.5614, 110.3363-110.3523)
+1,1.557385,110.338371,Central Mall
+2,1.556565,110.342916,Business Tower
+3,1.5525,110.349566,Trade Center
+4,1.553267,110.348842,Market Square
+5,1.558235,110.345125,Shopping Arcade
+6,1.558412,110.351687,Office Complex
+7,1.554521,110.3441,Plaza Junction
+
+[WAYS]
+# way_id,from_node,to_node,road_name,highway_type,travel_time_min
+
+3001,1,2,Central Mall Street,primary,4
+3002,1,3,Central Mall Highway,secondary,6
+3003,1,7,Central Mall Lane,primary,3
+3004,2,3,Business Tower Highway,primary,3
+3005,3,2,Trade Center Highway,primary,3
+3006,3,4,Trade Center Road,primary,5
+3007,4,5,Market Square Avenue,primary,6
+3008,4,6,Market Square Avenue,secondary,6
+3009,5,4,Shopping Arcade Boulevard,primary,6
+3010,5,6,Shopping Arcade Highway,primary,5
+3011,6,5,Office Complex Lane,primary,6
+3012,6,7,Office Complex Lane,primary,5
+3013,7,1,Plaza Junction Drive,primary,6
+3014,7,6,Plaza Junction Boulevard,primary,4
+
+[CAMERAS]
+# monitored roads
+3004,images/cam_tc3_3004.jpg
+3007,images/cam_tc3_3007.jpg
+3011,images/cam_tc3_3011.jpg
+
+[META]
+START,5
+GOAL,2,7
+ACCIDENT_MULTIPLIER,2

@@ -1,0 +1,36 @@
+[NODES]
+# Test Case 8: Medical District (6 nodes)
+# Coordinates: INSIDE OSM bounds (1.5517-1.5614, 110.3363-110.3523)
+1,1.554624,110.346673,General Hospital
+2,1.55975,110.342956,Clinic Complex
+3,1.553673,110.337008,Pharmacy Hub
+4,1.558214,110.343668,Medical Tower
+5,1.5589,110.338345,Health Center
+6,1.552443,110.35118,Wellness Clinic
+
+[WAYS]
+# way_id,from_node,to_node,road_name,highway_type,travel_time_min
+
+8001,1,2,General Hospital Street,primary,6
+8002,2,1,Clinic Complex Lane,primary,6
+8003,2,3,Clinic Complex Avenue,primary,3
+8004,3,4,Pharmacy Hub Avenue,primary,5
+8005,3,5,Pharmacy Hub Avenue,secondary,5
+8006,4,3,Medical Tower Way,primary,5
+8007,4,5,Medical Tower Boulevard,primary,3
+8008,4,6,Medical Tower Highway,secondary,4
+8009,5,3,Health Center Lane,secondary,7
+8010,5,4,Health Center Way,primary,3
+8011,5,6,Health Center Avenue,primary,4
+8012,6,1,Wellness Clinic Drive,primary,4
+
+[CAMERAS]
+# monitored roads
+8012,images/cam_tc8_8012.jpg
+8002,images/cam_tc8_8002.jpg
+8008,images/cam_tc8_8008.jpg
+
+[META]
+START,6
+GOAL,2,4
+ACCIDENT_MULTIPLIER,3
