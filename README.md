@@ -5,7 +5,7 @@ An intelligent **Traffic Incident Classification System** that combines machine 
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
 - [System Architecture](#system-architecture)
