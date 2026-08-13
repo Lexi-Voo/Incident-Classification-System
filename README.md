@@ -1,5 +1,4 @@
 # 🚦 Incident Classification System (ICS)
-### COS30019 – Introduction to AI | Assignment 2B | Group SkyNet
 
 An intelligent **Traffic Incident Classification System** that combines machine learning image classification with pathfinding algorithms to dynamically reroute traffic around accidents in the Kuching, Sarawak road network.
 
@@ -128,24 +127,12 @@ Each algorithm finds **up to 5 alternative routes** using an edge-penalisation s
 
 ### Prerequisites
 
-Install all required packages individually:
-
-```bash
-pip install tensorflow
-pip install xgboost
-pip install h5py
-pip install numpy
-pip install pillow
-pip install tkintermapview
-```
-
-Or use the requirements file:
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-> ⚠️ If you have both `python` and `python3`, ensure packages are installed for the correct interpreter.
 
 ### Models
 
@@ -245,19 +232,6 @@ Ten test cases cover different districts and network topologies across Kuching. 
 ### Best Routes Mode
 
 ![Best Routes Demo](images/best_routes_gif.gif)
-
----
-
-## Group
-
-**Group SkyNet** — COS30019 Introduction to AI, Semester 2 2025
-
-| Name | Student ID |
-|---|---|
-| Ramisa Nawar | 104388441 |
-| Lexi Yung Jun Voo | 104403218 |
-| Jonathan Zheng Li Chai | 104400675 |
-| Edwin Kong Zheng Quan | 102780074 |
 
 ---
 
