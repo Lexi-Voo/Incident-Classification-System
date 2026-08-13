@@ -1,43 +1,11 @@
-
-# Requirements for Traffic Incident Classification System (ICS)
-# COS30019 - Introduction to AI - Assignment 2B
-# Group: SkyNet
-# Python Version: 3.12.3
-
-
-
-# Deep Learning Framework
 tensorflow==2.20.0
-
-# Neural Network API (comes with TensorFlow but listed for clarity)
 keras==3.12.0
-
-# Numerical Computing
 numpy==2.2.6
-
-# Scientific Computing
 scipy==1.16.3
-
-# Image Processing
 pillow==10.4.0
-
-# HDF5 File Format (for loading .h5 models)
 h5py==3.15.1
-
-
 xgboost>=2.0.0
-
-# Traditional ML Algorithms
 scikit-learn==1.7.2
-
-# Data Analysis
 pandas==2.3.3
-
-# Plotting and Visualization
 matplotlib==3.10.7
-
-
-# Install with: pip install tkintermapview
 tkintermapview>=1.29
-
-# Note: tkinter comes built-in with Python (no need to install)
