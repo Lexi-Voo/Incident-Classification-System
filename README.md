@@ -125,24 +125,46 @@ Each algorithm finds **up to 5 alternative routes** using an edge-penalisation s
 
 ## Installation
 
-### Prerequisites
+### 1. Environment Setup
 
-Install dependencies:
+It is recommended to use **Python 3.12.3** inside a virtual environment (`venv`)
+
+**Windows (PowerShell / CMD):**
+```bash
+# Create virtual environment
+python -m venv venv
+
+# Activate virtual environment
+venv\Scripts\activate
+
+```
+**macOS / Linux:**
+```bash
+# Create virtual environment
+python3 -m venv venv
+
+# Activate virtual environment
+source venv/bin/activate
+```
+
+### 2. Install dependencies:
+
+Once virtual environment is active, install the required packages:
 
 ```bash
 pip install -r requirements.txt
 ```
 
 
-### Models
+### 3. Download Model Weights
 
 The trained model files (`.h5`) are excluded in this repository due to GitHub's file size limit.
 
 - Download the pre-trained weights directly from the [v1.0.0 Release](https://github.com/Lexi-Voo/Incident-Classification-System/releases/tag/v1.0.0) or individually below, then place them in the `models/` directory before running:
 
-- 📥 [model1_cnn.h5](https://github.com/Lexi-Voo/Incident-Classification-System/releases/download/v1.0.0/model1_cnn.h5)
-- 📥 [model2_mobilenetV2.h5](https://github.com/Lexi-Voo/Incident-Classification-System/releases/download/v1.0.0/model2_mobilenetV2.h5)
-- 📥 [model3_xgboost.h5](https://github.com/Lexi-Voo/Incident-Classification-System/releases/download/v1.0.0/model3_xgboost.h5)
+- [model1_cnn.h5](https://github.com/Lexi-Voo/Incident-Classification-System/releases/download/v1.0.0/model1_cnn.h5)
+- [model2_mobilenetV2.h5](https://github.com/Lexi-Voo/Incident-Classification-System/releases/download/v1.0.0/model2_mobilenetV2.h5)
+- [model3_xgboost.h5](https://github.com/Lexi-Voo/Incident-Classification-System/releases/download/v1.0.0/model3_xgboost.h5)
 
 ### Running the System
 
