@@ -136,11 +136,13 @@ pip install -r requirements.txt
 
 ### Models
 
-The trained model files (`.h5`) are not included in this repository due to GitHub's file size limit. Place your model files in the `models/` folder before running:
+The trained model files (`.h5`) are excluded in this repository due to GitHub's file size limit.
 
-- `models/model1_cnn.h5`
-- `models/model2_mobilenetV2.h5`
-- `models/model3_xgboost.h5`
+- Download the pre-trained weights directly from the [v1.0.0 Release](https://github.com/Lexi-Voo/Incident-Classification-System/releases/tag/v1.0.0) or individually below, then place them in the `models/` directory before running:
+
+- 📥 [model1_cnn.h5](https://github.com/Lexi-Voo/Incident-Classification-System/releases/download/v1.0.0/model1_cnn.h5)
+- 📥 [model2_mobilenetV2.h5](https://github.com/Lexi-Voo/Incident-Classification-System/releases/download/v1.0.0/model2_mobilenetV2.h5)
+- 📥 [model3_xgboost.h5](https://github.com/Lexi-Voo/Incident-Classification-System/releases/download/v1.0.0/model3_xgboost.h5)
 
 ### Running the System
 
